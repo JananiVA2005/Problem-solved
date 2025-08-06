@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static int neon(int square){
+        int sum =0;
+        while(square!=0){
+        
+        int value=square%10;
+        sum =sum+value;
+        square/=10;
+        }     
+        
+    return sum;
+}
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int square =n*n;
+        int sum =neon(square);
+        if(sum==n)
+            System.out.print("true");
+        else
+            System.out.print("false");
+            
+    }
+}
