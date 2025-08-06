@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n= Math.abs(scan.nextInt());
+        int even=0; int odd=0;
+       
+        while(n!=0){
+             int value =n%10;
+        if(value%2==0){
+            even =even+value;
+           
+          
+        }
+            else{
+                odd = odd+value;
+                
+            }
+             n=n/10;
+        }
+        System.out.println(odd + " " + even);
+    }
+}
