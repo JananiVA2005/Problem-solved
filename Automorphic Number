@@ -1,0 +1,49 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    
+        public static int find(int n,int square){
+            int count =0;
+            int sum =0;
+            int sums=0;
+            while(n!=0){
+                count++;
+                n=n/10;
+            }
+            
+            for(int i=1;i<=count;i++){
+                 sum =(sum*10)+square%10;
+                square/=10;
+                
+                
+            }
+           
+            for(int j=1;j<=count;j++){
+                sums =(sums*10)+sum%10;
+                sum/=10;
+                
+            }
+            return sums;
+                
+            }
+            
+        
+       
+          public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int square=n*n;
+        int sums= find(n,square);
+        
+        if(sums==n)
+            System.out.print("Automorphic");
+        
+    else
+        System.out.print("Not Automorphic");
+    }
+}
