@@ -1,0 +1,13 @@
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int players = scan.nextInt();
+        int  team = scan.nextInt();
+        int totalteam = players/team;
+        int player = players%team;
+        System.out.println("Total teams formed: " + totalteam);
+        System.out.println("Players left out: " + player);
+        
+    }
+}
