@@ -1,0 +1,30 @@
+public class Solution {
+    public static void main(String[] args) throws IOException {
+       Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        
+        int[] arr = new int[n];
+        double count=0,countt=0,coun=0;
+        for(int i=0;i<n;i++){
+            arr[i] = scan.nextInt();
+        
+          
+            if(arr[i]>0){
+                count++;
+            }
+            else if(arr[i]<0){
+                countt++;
+            }
+            else{
+                coun++;
+            }}
+            double value=count/n;
+            double neg =countt/n;
+            double zero = coun/n;
+            
+        
+        
+        System.out.printf("%.6f\n",value);
+         System.out.printf("%.6f\n",neg);
+              System.out.printf("%.6f\n",zero);
+            }}
