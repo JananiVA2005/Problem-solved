@@ -1,0 +1,31 @@
+public class envelope {
+	public static void main(String... args) {
+		int[][] arr = {{3,6,9},{1,4,7},{2,8,9}};
+		int r =arr.length;
+		int c=arr.length;
+		int max=0;
+		for(int i=0;i<r;i++) {
+			int sum =0;
+			for(int j=0;j<c;j++) {
+				sum += arr[i][j];
+				if(sum>max) {
+					max = sum;
+					
+				}
+			}
+			}
+		 int[][] result = new int[c][r];
+              int maxi=0;
+	        for (int i = 0; i < r; i++) {
+	        	int sums=0;
+	        
+	            for (int j = 0; j < c; j++) {
+	                result[j][i] = arr[i][j];
+	                sums+=result[i][j];
+	                if(sums>maxi) {
+
+		}
+				}}
+				int value =max+maxi;
+				System.out.println(value);
+			}}
