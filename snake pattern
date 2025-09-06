@@ -1,0 +1,21 @@
+public class student{
+	public static void main(String[] args) {
+		int[][] arr= {{50,7,80,90,},{1,2,3,4},{100,78,97,5}};
+		int n =arr.length;
+		Vector <Integer> v=new Vector<>();
+		for(int i=0;i<n;i++) {
+			if(i%2==0) {
+				for(int j=0;j<=n;j++) {
+					 v.insertElementAt(arr[i][j], v.size());
+				}
+			}
+			else {
+				for(int k=n;k>=0;k--) {
+					 v.insertElementAt(arr[i][k], v.size());
+				}
+			}
+			
+		}
+		System.out.println(v);
+	}
+}
