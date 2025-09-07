@@ -1,0 +1,13 @@
+String s="hello";
+		int n =s.length();
+		String s1="";
+		for(int i=0;i<n;i++) {
+			char ch =s.charAt(i);
+		}
+		for(int j=n-1;j>=0;j--) {
+			
+			s1+= s.charAt(j);
+		}
+		
+		System.out.println(s1);
+	}}
